@@ -27,7 +27,8 @@ if other tasks should be executed.
 
 .. tip::
 
-    By implementing more BPMN features, the workflow designer
+    If more BPMN features are implemented in te back-end, you should also implement them in the front-end :ref:`Modeler`
+    to make sure that end-users are able to use these features.
 
 .. _BpmnControllerExtendingBpmnController:
 

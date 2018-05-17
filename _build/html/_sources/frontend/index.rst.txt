@@ -75,6 +75,14 @@ will explain the usage of directives within Chassis Automation.
 * :ref:`DirectivesCallerDirective`
 * :ref:`DirectivesUsingBothDirectives`
 
-.. rubric:: Build
+.. rubric:: Deploy
 
-Run ``ng build`` to build the project. The build artifacts will be stored in the ``dist/`` directory. Use the ``-prod`` flag for a production build.
+This chapter will explain how to deploy Chassis Automation's front-end.
+
+.. toctree::
+    :hidden:
+
+    deploy
+
+* :ref:`DeployIntroduction`
+* :ref:`DeployDeployment`

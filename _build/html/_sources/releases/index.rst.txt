@@ -3,7 +3,7 @@ Releases
 
 The current version is ``1.0.0``.
 The Chassis Automation prototype uses `semantic versioning
-<https://semver.org/>`_. to understand the potential impact of updating to a new version.
+<https://semver.org/>`_ to understand the potential impact of updating to a new version.
 
 +---------------+----------------------------+
 | Version       | Release notes              |
