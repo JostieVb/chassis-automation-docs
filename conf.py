@@ -19,14 +19,14 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'Chassis-automation'
-copyright = u'2018, Joost van Bergen'
-author = u'Joost van Bergen'
+project = u'Chassis Automation'
+copyright = u'2018, Kaiser Software'
+author = u'Kaiser Software'
 
 # The short X.Y version
 version = u''
 # The full version, including alpha/beta/rc tags
-release = u'1'
+release = u'0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -38,8 +38,7 @@ release = u'1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-]
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -74,7 +73,7 @@ pygments_style = 'sphinx'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -129,7 +128,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Chassis-automation.tex', u'Chassis-automation Documentation',
-     u'Joost van Bergen', 'manual'),
+     u'Kaiser Software', 'manual'),
 ]
 
 

@@ -1,0 +1,17 @@
+.. _DirectivesIndex:
+
+Introduction
+============
+
+Angular let's you extend html elements with new attributes called **directives**.
+Angular has some built-in directives, like ``ngFor``, ``ngIf`` and ``ngSwitch``.
+You can also define your own directives. Chassis Automation uses two custom directives:
+
+* ``form``
+* ``caller``
+
+More information about these directives will be given below.
+
+.. include:: form-directive
+
+.. include:: caller-directive

@@ -1,0 +1,13 @@
+Front-end Installation
+======================
+
+Chassis Automation's front-end was generated with Angular CLI version 1.7.0.
+Therefore, you need to install `Angular CLI
+<https://github.com/angular/angular-cli/>`_ if you don't have it installed yet.
+
+Development server
+------------------
+
+Clone the project from Github. To run a development server locally, navigate to the project folder
+and run ``ng serve``. The app will be available on ``http://localhost:9000`` and will automatically reload
+if you change any of the source files.

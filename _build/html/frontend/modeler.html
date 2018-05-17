@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; Chassis Automation 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction" href="directives.html" />
+    <link rel="prev" title="Introduction" href="structure.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Chassis Automation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Front-end</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#folder-structure">Folder structure</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#modeler">Modeler</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#supported-bpmn-items">Supported BPMN items</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modeler-initialization">Modeler initialization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#properties-panel">Properties panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-properties-service">The properties service</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extending-the-properties-generator">Extending the properties generator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extending-the-helpers">Extending the helpers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#directives">Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#build">Build</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../backend/index.html">Back-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Releases</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Chassis Automation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Front-end</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/frontend/modeler.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<span id="modelerintroduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The modeler uses a toolkit called <a class="reference external" href="https://github.com/bpmn-io/bpmn-js">BPMN-js</a>. The modeler is used when creating or editing a process on the ‘Processes’ page.
+This chapter will explain the features of the modeler.</p>
+</div>
+<div class="section" id="supported-bpmn-items">
+<span id="modelersupportedbpmnitems"></span><h1>Supported BPMN items<a class="headerlink" href="#supported-bpmn-items" title="Permalink to this headline">¶</a></h1>
+<p>This table shows BPMN items that are currently supported by Chassis Automation’s modeler.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="69%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Item</th>
+<th class="head">Brief description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Start-event</td>
+<td>The very beginning of a process</td>
+</tr>
+<tr class="row-odd"><td>User-task</td>
+<td>The assigned user has to execute a task before the process continues</td>
+</tr>
+<tr class="row-even"><td>Send-task</td>
+<td>Send a message with a task to the assigned user</td>
+</tr>
+<tr class="row-odd"><td>Receive-task</td>
+<td>Send a message to the assigned user</td>
+</tr>
+<tr class="row-even"><td>Exclusive gateway (X-OR)</td>
+<td>The flow gets divided to one of the output branches</td>
+</tr>
+<tr class="row-odd"><td>End-event</td>
+<td>The very end of a process.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="modeler-initialization">
+<span id="modelerbasics"></span><h1>Modeler initialization<a class="headerlink" href="#modeler-initialization" title="Permalink to this headline">¶</a></h1>
+<p>The modeler component can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/pages/modeler/modeler.component.ts</span></code>.
+The modeler is initialized in the <code class="docutils literal notranslate"><span class="pre">instantiateModeler()</span></code> function and is stored in the <code class="docutils literal notranslate"><span class="pre">modeler</span></code> property of the modeler component.
+If you need to add additional modules to the modeler, you can import them to the modeler component add them to the <code class="docutils literal notranslate"><span class="pre">additionalModules</span></code> array
+in the <code class="docutils literal notranslate"><span class="pre">instantiateModeler()</span></code> function. An example is shown below.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">AdditionalModuleName</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;additional/module/path&#39;</span><span class="p">;</span>
+
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">ModelerComponent</span> <span class="kr">implements</span> <span class="nx">OnInit</span><span class="p">,</span> <span class="nx">OnDestroy</span> <span class="p">{</span>
+
+    <span class="nx">instantiateModeler</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Modeler</span><span class="p">({</span>
+            <span class="nx">container</span><span class="o">:</span> <span class="s1">&#39;.canvas&#39;</span><span class="p">,</span>
+            <span class="nx">additionalModules</span><span class="o">:</span> <span class="p">[</span>
+                <span class="c1">// Add additional modules here</span>
+            <span class="p">]</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="properties-panel">
+<span id="modelerhostlistener"></span><h1>Properties panel<a class="headerlink" href="#properties-panel" title="Permalink to this headline">¶</a></h1>
+<p>To enable user interaction with BPMN items in order to edit their properties, a <code class="docutils literal notranslate"><span class="pre">&#64;HostListener</span></code> is created.
+This host listener listens to click events that occur on editable BPMN items and calls a function that will display the selected item’s properties in the properties panel.
+If you want to extend the range of items that are editable, you can add the type of the item that should be editable to the <code class="docutils literal notranslate"><span class="pre">editableTypes</span></code> array, which is a property of the modeler component.
+A new editable type should be added to this array as a <strong>lowercase string without any spaces or other seperators between words</strong>. Currently, this array holds the following values.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">protected</span> <span class="nx">editableTypes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;task&#39;</span><span class="p">,</span> <span class="s1">&#39;exclusivegateway&#39;</span><span class="p">,</span> <span class="s1">&#39;startevent&#39;</span><span class="p">,</span> <span class="s1">&#39;endevent&#39;</span><span class="p">];</span>
+</pre></div>
+</div>
+<p>When an editableType is clicked, the <code class="docutils literal notranslate"><span class="pre">initProperties(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string)</span></code> initializes the properties for the selected item.
+The properties will be displayed if they already exist for the clicked item. If they don’t exist, they will be created by the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string,</span> <span class="pre">sequence:</span> <span class="pre">any)</span></code> function in the properties service.</p>
+<div class="section" id="the-properties-service">
+<h2>The properties service<a class="headerlink" href="#the-properties-service" title="Permalink to this headline">¶</a></h2>
+<p>The properties service can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/services/properties.service.ts</span></code>.
+This service generates the properties (<code class="docutils literal notranslate"><span class="pre">generatePropertiesByType()</span></code>) and holds additional information for the properties panel that will be returned from the <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> function.</p>
+</div>
+<div class="section" id="extending-the-properties-generator">
+<h2>Extending the properties generator<a class="headerlink" href="#extending-the-properties-generator" title="Permalink to this headline">¶</a></h2>
+<p>To extend the properties generator, you have to add another <code class="docutils literal notranslate"><span class="pre">case</span></code> for the <code class="docutils literal notranslate"><span class="pre">switch</span></code> that checks for the type of the selected item to the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType()</span></code> method.
+Within this <code class="docutils literal notranslate"><span class="pre">case</span></code>, you can set the desired properties and their values that should be set when te properties get generated. Mostly, the property values are empty, because
+they have to be set by the end-user. An example is shown below.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">generatePropertiesByType</span><span class="p">(</span><span class="nx">id</span><span class="o">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">type</span><span class="o">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">sequence</span><span class="o">:</span> <span class="nx">any</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">property</span> <span class="o">=</span> <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="nx">id</span><span class="p">,</span> <span class="nx">type</span><span class="o">:</span> <span class="nx">type</span><span class="p">};</span>
+    <span class="k">switch</span> <span class="p">(</span><span class="nx">type</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="s1">&#39;newtype&#39;</span><span class="o">:</span>
+            <span class="nx">property</span><span class="p">[</span><span class="s1">&#39;firstProperty&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+            <span class="nx">property</span><span class="p">[</span><span class="s1">&#39;secondProperty&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
+            <span class="nx">property</span><span class="p">[</span><span class="s1">&#39;thirdProperty&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;firstExample&#39;</span><span class="o">:</span> <span class="s1">&#39;This property has pre-set values&#39;</span>
+                <span class="s1">&#39;secondExample&#39;</span><span class="o">:</span> <span class="s1">&#39;Another pre-set value&#39;</span>
+            <span class="p">};</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="c1">// More properties here</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">property</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>To render the properties, you need to add a new <code class="docutils literal notranslate"><span class="pre">ng-template</span></code> element to the html template for the modeler.
+You can find the html template in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/pages/modeler/modeler.component.html</span></code>.</p>
+</div>
+<div class="section" id="extending-the-helpers">
+<h2>Extending the helpers<a class="headerlink" href="#extending-the-helpers" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> method returns an object that holds more information for the end-user about certain properties.
+During rendering, this information will be shown in pop-up balloons in the properties panel.
+If you want to extend the helpers, you can simply add a new property to the object that the <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> method returns.
+You can find an example below.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">helpers</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">id</span><span class="o">:</span> <span class="s1">&#39;The identifier is unique and can\&#39;t be modified.&#39;</span><span class="p">,</span>
+        <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;This is the type of the selected item.&#39;</span><span class="p">,</span>
+        <span class="c1">// Add more helpers here</span>
+    <span class="p">};</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="directives.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structure.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Kaiser Software.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

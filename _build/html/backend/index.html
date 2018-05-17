@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Back-end &mdash; Chassis Automation 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Introduction" href="installation.html" />
+    <link rel="prev" title="Introduction" href="../frontend/directives.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Chassis Automation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../frontend/index.html">Front-end</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Back-end</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#database-set-up">Database set-up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#development-server">Development server</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#folder-structure">Folder structure</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structure.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structure.html#folder-structure">Folder structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#authentication">Authentication</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="authentication.html">Introduction</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#routes">Routes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="routes.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="routes.html#middleware-and-permissions">Middleware and permissions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-tables">Data tables</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-tables.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-tables.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bpmn-controller">BPMN controller</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bpmn-controller.html">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bpmn-controller.html#handling-requests">Handling requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bpmn-controller.html#extending-the-bpmn-controller">Extending the BPMN controller</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Releases</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Chassis Automation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Back-end</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/backend/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="back-end">
+<h1>Back-end<a class="headerlink" href="#back-end" title="Permalink to this headline">¶</a></h1>
+<p>Chassis Automation’s back-end is a Laravel 5 API. Therefore, the back-end relies on Composer to install
+and update dependencies. Please install <a class="reference external" href="https://getcomposer.org/">Composer</a> if you don’t have it installed yet.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>This chapter will explain the installation process of Chassis Automation’s back-end.</p>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="installation.html#backendinstallationintroduction"><span class="std std-ref">Introduction</span></a></li>
+<li><a class="reference internal" href="installation.html#backendinstallationdatabasesetup"><span class="std std-ref">Database set-up</span></a></li>
+<li><a class="reference internal" href="installation.html#backendinstallationdevelopmentserver"><span class="std std-ref">Development server</span></a></li>
+</ul>
+</div>
+<div class="section" id="folder-structure">
+<h2>Folder structure<a class="headerlink" href="#folder-structure" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="structure.html#backendfolderstructureintroduction"><span class="std std-ref">Introduction</span></a></li>
+<li><a class="reference internal" href="structure.html#backendfolderstructure"><span class="std std-ref">Folder structure</span></a></li>
+</ul>
+</div>
+<div class="section" id="authentication">
+<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h2>
+<p>This chapter will explain the usage of Laravel Passport within the prototype.</p>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="authentication.html#authenticationintroduction"><span class="std std-ref">Introduction</span></a></li>
+<li><a class="reference internal" href="routes.html#routesmiddleware"><span class="std std-ref">Middleware and permissions</span></a></li>
+</ul>
+</div>
+<div class="section" id="routes">
+<h2>Routes<a class="headerlink" href="#routes" title="Permalink to this headline">¶</a></h2>
+<p>Routes are the API end-points for Chassis Automation. This chapter provides more information about the usage and other stuff.</p>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="routes.html#routesintroduction"><span class="std std-ref">Introduction</span></a></li>
+<li><a class="reference internal" href="routes.html#routesmiddleware"><span class="std std-ref">Middleware and permissions</span></a></li>
+</ul>
+</div>
+<div class="section" id="data-tables">
+<h2>Data tables<a class="headerlink" href="#data-tables" title="Permalink to this headline">¶</a></h2>
+<p>This chapter will explain the database structure and the usage of prefixed data tables and columns for data storage.</p>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="data-tables.html#datatablesintroduction"><span class="std std-ref">Introduction</span></a></li>
+<li><a class="reference internal" href="data-tables.html#datatablesstructure"><span class="std std-ref">Structure</span></a></li>
+</ul>
+</div>
+<div class="section" id="bpmn-controller">
+<h2>BPMN controller<a class="headerlink" href="#bpmn-controller" title="Permalink to this headline">¶</a></h2>
+<p>The BPMN controller handles calls from the front-end that should be linked to a process. This chapter will explain
+the usage of the BPMN controller.</p>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
+<li><a class="reference internal" href="bpmn-controller.html#bpmncontrollerintroduction"><span class="std std-ref">Introduction</span></a></li>
+<li><a class="reference internal" href="bpmn-controller.html#bpmncontrollerhandlingrequests"><span class="std std-ref">Handling requests</span></a></li>
+<li><a class="reference internal" href="bpmn-controller.html#bpmncontrollerextendingbpmncontroller"><span class="std std-ref">Extending the BPMN controller</span></a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../frontend/directives.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Kaiser Software.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

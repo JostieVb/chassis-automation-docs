@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; Chassis Automation 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Back-end" href="../backend/index.html" />
+    <link rel="prev" title="Introduction" href="installation.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Chassis Automation
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Front-end</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#directives">Directives</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#form-directive">Form directive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#caller-directive">Caller directive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-both-directives">Using both directives</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../backend/index.html">Back-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../releases/index.html">Releases</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Chassis Automation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Front-end</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/frontend/directives.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<span id="directivesintroduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>Angular let’s you extend html elements with new attributes called <strong>directives</strong>.
+Angular has some built-in directives, like <code class="docutils literal notranslate"><span class="pre">ngFor</span></code>, <code class="docutils literal notranslate"><span class="pre">ngIf</span></code> and <code class="docutils literal notranslate"><span class="pre">ngSwitch</span></code>.
+You can also define your own directives. Chassis Automation uses two custom directives:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">form</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">caller</span></code></li>
+</ul>
+<p>These directives can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/bpmn/directives/</span></code>.
+More information about these directives will be given below.</p>
+</div>
+<div class="section" id="form-directive">
+<span id="directivesformdirective"></span><h1>Form directive<a class="headerlink" href="#form-directive" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">form</span></code> directive makes sure that a form built with the form builder will be rendered on the location where
+the directive is set. The directive requires as input the identifier of the desired form.
+The example below shows how the <code class="docutils literal notranslate"><span class="pre">form</span></code> directive should be used.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;form [form]=&quot;&#39;form-new-product&#39;&quot;&gt;&lt;/form&gt;
+</pre></div>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">The form identifier should be given to the directive as a <code class="docutils literal notranslate"><span class="pre">string</span></code>, so single quotations are required.</p>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">In the current version of the prototype, the form directive doesn’t render a submit button and form meta-data such as
+a form title and a subtitle, because this isn’t supported by the form builder yet. You should add a submit button
+manually just below the <code class="docutils literal notranslate"><span class="pre">&lt;form&gt;</span></code> element where the directive is set.</p>
+</div>
+<p>To handle the submit event, the <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive comes in. More information about the <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive will be
+given in the next sub-chapter.</p>
+</div>
+<div class="section" id="caller-directive">
+<span id="directivescallerdirective"></span><h1>Caller directive<a class="headerlink" href="#caller-directive" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive makes sure that a form is submitted and that a call is made to the back-end to check if a
+workflow is linked to the submitted form. This directive should only be set on a submit button for a form.
+The example below shows how the <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive should be used.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;button [caller]=&quot;&#39;form-new-product&#39;&quot;&gt;Add product&lt;/button&gt;
+</pre></div>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">The form identifier should be given to the directive as a <code class="docutils literal notranslate"><span class="pre">string</span></code>, so single quotations are required.</p>
+</div>
+</div>
+<div class="section" id="using-both-directives">
+<span id="directivesusingbothdirectives"></span><h1>Using both directives<a class="headerlink" href="#using-both-directives" title="Permalink to this headline">¶</a></h1>
+<p>In order to render a form and check for a linked workflow, both directives must be used.
+A full example is shown below.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;div class=&quot;form-container&quot;&gt;
+    &lt;h5&gt;New product&lt;/h5&gt;
+    &lt;p&gt;Please, add a new product.&lt;/p&gt;
+    &lt;form [form]=&quot;&#39;form-new-product&#39;&quot;&gt;&lt;/form&gt;
+    &lt;button [caller]=&quot;&#39;form-new-product&#39;&quot;&gt;Add product&lt;/button&gt;
+&lt;/div&gt;
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../backend/index.html" class="btn btn-neutral float-right" title="Back-end" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Kaiser Software.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.0.1',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

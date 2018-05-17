@@ -1,0 +1,11 @@
+Introduction
+------------
+
+To access data from the API, certain routes are registered. You can find these routes in
+``chassis-automation-api/routes/api.php``.
+
+Middleware
+----------
+
+.. include:: /backend/routes/middleware.rst
+
