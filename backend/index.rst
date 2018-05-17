@@ -64,6 +64,7 @@ This chapter will explain the database structure and the usage of prefixed data 
 * :ref:`DataTablesIntroduction`
 * :ref:`DataTablesStructure`
 * :ref:`DataTablesMigrationAndSeeding`
+* :ref:`DataTablesEditUserPermissions`
 
 .. rubric:: BPMN controller
 

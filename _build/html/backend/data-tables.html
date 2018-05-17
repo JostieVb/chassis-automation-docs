@@ -91,6 +91,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#structure">Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#migration-and-seeding">Migration and seeding</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-user-permissions">Edit user permissions</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="bpmn-controller.html">BPMN controller</a></li>
@@ -250,6 +251,42 @@ and their names <strong>must</strong> start with the <code class="docutils liter
 <span id="datatablesmigrationandseeding"></span><h2>Migration and seeding<a class="headerlink" href="#migration-and-seeding" title="Permalink to this headline">¶</a></h2>
 <p>Migrate and seed Chassis Automation’s data tables by running the following command:
 <code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">artisan</span> <span class="pre">migrate:refresh</span> <span class="pre">--seed</span></code>.</p>
+<p>After executing this command, three tests accounts are created. The table below shows their default credentials and permissions.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="11%" />
+<col width="58%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Username</th>
+<th class="head">Password</th>
+<th class="head">Permissions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference external" href="mailto:admin&#37;&#52;&#48;chassis-automation&#46;com">admin<span>&#64;</span>chassis-automation<span>&#46;</span>com</a></td>
+<td>admin</td>
+<td>dashboard, entries, automation, processes ,forms, data-tables</td>
+</tr>
+<tr class="row-odd"><td><a class="reference external" href="mailto:logistics&#37;&#52;&#48;chassis-automation&#46;com">logistics<span>&#64;</span>chassis-automation<span>&#46;</span>com</a></td>
+<td>admin</td>
+<td>dashboard, entries</td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="mailto:supplier&#37;&#52;&#48;chassis-automation&#46;com">supplier<span>&#64;</span>chassis-automation<span>&#46;</span>com</a></td>
+<td>admin</td>
+<td>dashboard, entries, products</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="edit-user-permissions">
+<span id="datatablesedituserpermissions"></span><h2>Edit user permissions<a class="headerlink" href="#edit-user-permissions" title="Permalink to this headline">¶</a></h2>
+<p>To edit the user permissions, you can change the values that are stored in the <code class="docutils literal notranslate"><span class="pre">permissions</span></code> column of the <code class="docutils literal notranslate"><span class="pre">users</span></code> table.</p>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">User permissions are stored in the database as CSV format.</p>
+</div>
 </div>
 </div>
 

@@ -64,3 +64,26 @@ Migration and seeding
 
 Migrate and seed Chassis Automation's data tables by running the following command:
 ``php artisan migrate:refresh --seed``.
+
+After executing this command, three tests accounts are created. The table below shows their default credentials and permissions.
+
++----------------------------------+------------+---------------------------------------------------------------+
+| Username                         | Password   | Permissions                                                   |
++==================================+============+===============================================================+
+| admin@chassis-automation.com     | admin      | dashboard, entries, automation, processes ,forms, data-tables |
++----------------------------------+------------+---------------------------------------------------------------+
+| logistics@chassis-automation.com | admin      | dashboard, entries                                            |
++----------------------------------+------------+---------------------------------------------------------------+
+| supplier@chassis-automation.com  | admin      | dashboard, entries, products                                  |
++----------------------------------+------------+---------------------------------------------------------------+
+
+.. _DataTablesEditUserPermissions:
+
+Edit user permissions
+---------------------
+
+To edit the user permissions, you can change the values that are stored in the ``permissions`` column of the ``users`` table.
+
+.. danger::
+
+    User permissions are stored in the database as CSV format.
