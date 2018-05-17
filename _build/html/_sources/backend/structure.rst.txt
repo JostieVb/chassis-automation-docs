@@ -1,3 +1,6 @@
+Folder structure
+================
+
 .. _BackendFolderStructureIntroduction:
 
 Introduction

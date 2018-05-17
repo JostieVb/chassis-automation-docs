@@ -1,3 +1,6 @@
+Data tables
+===========
+
 .. _DataTablesIntroduction:
 
 Introduction

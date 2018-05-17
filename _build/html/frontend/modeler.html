@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; Chassis Automation 0.0.1 documentation</title>
+  <title>Modeler &mdash; Chassis Automation 1.0.0 documentation</title>
   
 
   
@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="directives.html" />
-    <link rel="prev" title="Introduction" href="structure.html" /> 
+    <link rel="next" title="Directives" href="directives.html" />
+    <link rel="prev" title="Form builder" href="form-builder.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -82,10 +82,11 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Front-end</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#folder-structure">Folder structure</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#modeler">Modeler</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-builder.html">Form builder</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Modeler</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#supported-bpmn-items">Supported BPMN items</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#modeler-initialization">Modeler initialization</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#properties-panel">Properties panel</a><ul>
@@ -96,8 +97,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#directives">Directives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#build">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../backend/index.html">Back-end</a></li>
@@ -149,7 +149,7 @@
         
           <li><a href="index.html">Front-end</a> &raquo;</li>
         
-      <li>Introduction</li>
+      <li>Modeler</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -168,13 +168,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduction">
-<span id="modelerintroduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="modeler">
+<h1>Modeler<a class="headerlink" href="#modeler" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<span id="modelerintroduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The modeler uses a toolkit called <a class="reference external" href="https://github.com/bpmn-io/bpmn-js">BPMN-js</a>. The modeler is used when creating or editing a process on the ‘Processes’ page.
 This chapter will explain the features of the modeler.</p>
 </div>
 <div class="section" id="supported-bpmn-items">
-<span id="modelersupportedbpmnitems"></span><h1>Supported BPMN items<a class="headerlink" href="#supported-bpmn-items" title="Permalink to this headline">¶</a></h1>
+<span id="modelersupportedbpmnitems"></span><h2>Supported BPMN items<a class="headerlink" href="#supported-bpmn-items" title="Permalink to this headline">¶</a></h2>
 <p>This table shows BPMN items that are currently supported by Chassis Automation’s modeler.</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -209,7 +211,7 @@ This chapter will explain the features of the modeler.</p>
 </table>
 </div>
 <div class="section" id="modeler-initialization">
-<span id="modelerbasics"></span><h1>Modeler initialization<a class="headerlink" href="#modeler-initialization" title="Permalink to this headline">¶</a></h1>
+<span id="modelerbasics"></span><h2>Modeler initialization<a class="headerlink" href="#modeler-initialization" title="Permalink to this headline">¶</a></h2>
 <p>The modeler component can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/pages/modeler/modeler.component.ts</span></code>.
 The modeler is initialized in the <code class="docutils literal notranslate"><span class="pre">instantiateModeler()</span></code> function and is stored in the <code class="docutils literal notranslate"><span class="pre">modeler</span></code> property of the modeler component.
 If you need to add additional modules to the modeler, you can import them to the modeler component add them to the <code class="docutils literal notranslate"><span class="pre">additionalModules</span></code> array
@@ -226,12 +228,13 @@ in the <code class="docutils literal notranslate"><span class="pre">instantiateM
             <span class="p">]</span>
         <span class="p">});</span>
     <span class="p">}</span>
+
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="properties-panel">
-<span id="modelerhostlistener"></span><h1>Properties panel<a class="headerlink" href="#properties-panel" title="Permalink to this headline">¶</a></h1>
+<span id="modelerhostlistener"></span><h2>Properties panel<a class="headerlink" href="#properties-panel" title="Permalink to this headline">¶</a></h2>
 <p>To enable user interaction with BPMN items in order to edit their properties, a <code class="docutils literal notranslate"><span class="pre">&#64;HostListener</span></code> is created.
 This host listener listens to click events that occur on editable BPMN items and calls a function that will display the selected item’s properties in the properties panel.
 If you want to extend the range of items that are editable, you can add the type of the item that should be editable to the <code class="docutils literal notranslate"><span class="pre">editableTypes</span></code> array, which is a property of the modeler component.
@@ -242,12 +245,12 @@ A new editable type should be added to this array as a <strong>lowercase string 
 <p>When an editableType is clicked, the <code class="docutils literal notranslate"><span class="pre">initProperties(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string)</span></code> initializes the properties for the selected item.
 The properties will be displayed if they already exist for the clicked item. If they don’t exist, they will be created by the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string,</span> <span class="pre">sequence:</span> <span class="pre">any)</span></code> function in the properties service.</p>
 <div class="section" id="the-properties-service">
-<h2>The properties service<a class="headerlink" href="#the-properties-service" title="Permalink to this headline">¶</a></h2>
+<h3>The properties service<a class="headerlink" href="#the-properties-service" title="Permalink to this headline">¶</a></h3>
 <p>The properties service can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/services/properties.service.ts</span></code>.
 This service generates the properties (<code class="docutils literal notranslate"><span class="pre">generatePropertiesByType()</span></code>) and holds additional information for the properties panel that will be returned from the <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> function.</p>
 </div>
 <div class="section" id="extending-the-properties-generator">
-<h2>Extending the properties generator<a class="headerlink" href="#extending-the-properties-generator" title="Permalink to this headline">¶</a></h2>
+<h3>Extending the properties generator<a class="headerlink" href="#extending-the-properties-generator" title="Permalink to this headline">¶</a></h3>
 <p>To extend the properties generator, you have to add another <code class="docutils literal notranslate"><span class="pre">case</span></code> for the <code class="docutils literal notranslate"><span class="pre">switch</span></code> that checks for the type of the selected item to the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType()</span></code> method.
 Within this <code class="docutils literal notranslate"><span class="pre">case</span></code>, you can set the desired properties and their values that should be set when te properties get generated. Mostly, the property values are empty, because
 they have to be set by the end-user. An example is shown below.</p>
@@ -272,7 +275,7 @@ they have to be set by the end-user. An example is shown below.</p>
 You can find the html template in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/pages/modeler/modeler.component.html</span></code>.</p>
 </div>
 <div class="section" id="extending-the-helpers">
-<h2>Extending the helpers<a class="headerlink" href="#extending-the-helpers" title="Permalink to this headline">¶</a></h2>
+<h3>Extending the helpers<a class="headerlink" href="#extending-the-helpers" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> method returns an object that holds more information for the end-user about certain properties.
 During rendering, this information will be shown in pop-up balloons in the properties panel.
 If you want to extend the helpers, you can simply add a new property to the object that the <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> method returns.
@@ -288,6 +291,7 @@ You can find an example below.</p>
 </div>
 </div>
 </div>
+</div>
 
 
            </div>
@@ -297,10 +301,10 @@ You can find an example below.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="directives.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="directives.html" class="btn btn-neutral float-right" title="Directives" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="structure.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="form-builder.html" class="btn btn-neutral" title="Form builder" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -331,7 +335,7 @@ You can find an example below.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.0.1',
+            VERSION:'1.0.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

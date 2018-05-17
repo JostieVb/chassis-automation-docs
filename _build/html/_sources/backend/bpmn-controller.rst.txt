@@ -1,3 +1,6 @@
+BPMN controller
+===============
+
 .. _BpmnControllerIntroduction:
 
 Introduction

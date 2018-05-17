@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; Chassis Automation 0.0.1 documentation</title>
+  <title>Directives &mdash; Chassis Automation 1.0.0 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Back-end" href="../backend/index.html" />
-    <link rel="prev" title="Introduction" href="installation.html" /> 
+    <link rel="prev" title="Modeler" href="modeler.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -83,13 +83,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Front-end</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#folder-structure">Folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#form-builder">Form builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#modeler">Modeler</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#directives">Directives</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#form-directive">Form directive</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#caller-directive">Caller directive</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#using-both-directives">Using both directives</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Directives</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#form-directive">Form directive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#caller-directive">Caller directive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-both-directives">Using both directives</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#build">Build</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../backend/index.html">Back-end</a></li>
@@ -141,7 +148,7 @@
         
           <li><a href="index.html">Front-end</a> &raquo;</li>
         
-      <li>Introduction</li>
+      <li>Directives</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,8 +167,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduction">
-<span id="directivesintroduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="directives">
+<h1>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<span id="directivesintroduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Angular let’s you extend html elements with new attributes called <strong>directives</strong>.
 Angular has some built-in directives, like <code class="docutils literal notranslate"><span class="pre">ngFor</span></code>, <code class="docutils literal notranslate"><span class="pre">ngIf</span></code> and <code class="docutils literal notranslate"><span class="pre">ngSwitch</span></code>.
 You can also define your own directives. Chassis Automation uses two custom directives:</p>
@@ -173,7 +182,7 @@ You can also define your own directives. Chassis Automation uses two custom dire
 More information about these directives will be given below.</p>
 </div>
 <div class="section" id="form-directive">
-<span id="directivesformdirective"></span><h1>Form directive<a class="headerlink" href="#form-directive" title="Permalink to this headline">¶</a></h1>
+<span id="directivesformdirective"></span><h2>Form directive<a class="headerlink" href="#form-directive" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">form</span></code> directive makes sure that a form built with the form builder will be rendered on the location where
 the directive is set. The directive requires as input the identifier of the desired form.
 The example below shows how the <code class="docutils literal notranslate"><span class="pre">form</span></code> directive should be used.</p>
@@ -194,7 +203,7 @@ manually just below the <code class="docutils literal notranslate"><span class="
 given in the next sub-chapter.</p>
 </div>
 <div class="section" id="caller-directive">
-<span id="directivescallerdirective"></span><h1>Caller directive<a class="headerlink" href="#caller-directive" title="Permalink to this headline">¶</a></h1>
+<span id="directivescallerdirective"></span><h2>Caller directive<a class="headerlink" href="#caller-directive" title="Permalink to this headline">¶</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive makes sure that a form is submitted and that a call is made to the back-end to check if a
 workflow is linked to the submitted form. This directive should only be set on a submit button for a form.
 The example below shows how the <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive should be used.</p>
@@ -207,7 +216,7 @@ The example below shows how the <code class="docutils literal notranslate"><span
 </div>
 </div>
 <div class="section" id="using-both-directives">
-<span id="directivesusingbothdirectives"></span><h1>Using both directives<a class="headerlink" href="#using-both-directives" title="Permalink to this headline">¶</a></h1>
+<span id="directivesusingbothdirectives"></span><h2>Using both directives<a class="headerlink" href="#using-both-directives" title="Permalink to this headline">¶</a></h2>
 <p>In order to render a form and check for a linked workflow, both directives must be used.
 A full example is shown below.</p>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;div class=&quot;form-container&quot;&gt;
@@ -217,6 +226,7 @@ A full example is shown below.</p>
     &lt;button [caller]=&quot;&#39;form-new-product&#39;&quot;&gt;Add product&lt;/button&gt;
 &lt;/div&gt;
 </pre></div>
+</div>
 </div>
 </div>
 
@@ -231,7 +241,7 @@ A full example is shown below.</p>
         <a href="../backend/index.html" class="btn btn-neutral float-right" title="Back-end" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="installation.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="modeler.html" class="btn btn-neutral" title="Modeler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -262,7 +272,7 @@ A full example is shown below.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.0.1',
+            VERSION:'1.0.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; Chassis Automation 0.0.1 documentation</title>
+  <title>Installation &mdash; Chassis Automation 1.0.0 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Introduction" href="directives.html" />
+    <link rel="next" title="Folder structure" href="structure.html" />
     <link rel="prev" title="Front-end" href="index.html" /> 
 
   
@@ -83,11 +83,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Front-end</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="index.html#installation">Installation</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#setting-up">Setting up</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#development-server">Development server</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-up">Setting up</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#development-server">Development server</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#folder-structure">Folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#form-builder">Form builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#modeler">Modeler</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#directives">Directives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#build">Build</a></li>
 </ul>
@@ -141,7 +147,7 @@
         
           <li><a href="index.html">Front-end</a> &raquo;</li>
         
-      <li>Introduction</li>
+      <li>Installation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,12 +166,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduction">
-<span id="frontendinstallationintroduction"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<span id="frontendinstallationintroduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Clone the project from <a class="reference external" href="https://github.com/JostieVb/chassis-automation-client">Github</a>. When completed, navigate to the project folder and run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code>.</p>
 </div>
 <div class="section" id="setting-up">
-<span id="frontendinstallationsettingup"></span><h1>Setting up<a class="headerlink" href="#setting-up" title="Permalink to this headline">¶</a></h1>
+<span id="frontendinstallationsettingup"></span><h2>Setting up<a class="headerlink" href="#setting-up" title="Permalink to this headline">¶</a></h2>
 <p>When the installation is completed, some other import things should be set.
 In <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/</span></code> you can find a file called <code class="docutils literal notranslate"><span class="pre">global.ts</span></code> that holds two constants name <code class="docutils literal notranslate"><span class="pre">API_BASE</span></code> and <code class="docutils literal notranslate"><span class="pre">BACKEND_BASE</span></code>
 By default, these constants will have the following values.</p>
@@ -177,10 +185,11 @@ By default, these constants will have the following values.</p>
 If you are running Chassis Automation on another server or port, please change these constants to the right values.</p>
 </div>
 <div class="section" id="development-server">
-<span id="frontendinstallationdevelopmentserver"></span><h1>Development server<a class="headerlink" href="#development-server" title="Permalink to this headline">¶</a></h1>
+<span id="frontendinstallationdevelopmentserver"></span><h2>Development server<a class="headerlink" href="#development-server" title="Permalink to this headline">¶</a></h2>
 <p>To run a development server locally, navigate to the project folder
 and run <code class="docutils literal notranslate"><span class="pre">ng</span> <span class="pre">serve</span></code>. The app will be available on <code class="docutils literal notranslate"><span class="pre">http://localhost:9000</span></code> and will automatically reload
 if you change any of the source files.</p>
+</div>
 </div>
 
 
@@ -191,7 +200,7 @@ if you change any of the source files.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="directives.html" class="btn btn-neutral float-right" title="Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="structure.html" class="btn btn-neutral float-right" title="Folder structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Front-end" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -225,7 +234,7 @@ if you change any of the source files.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.0.1',
+            VERSION:'1.0.0',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

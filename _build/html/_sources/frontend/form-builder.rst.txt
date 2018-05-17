@@ -1,3 +1,6 @@
+Form builder
+============
+
 .. _FormBuilderIntroduction:
 
 Introduction

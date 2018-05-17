@@ -1,3 +1,6 @@
+Modeler
+=======
+
 .. _ModelerIntroduction:
 
 Introduction
@@ -54,6 +57,7 @@ in the ``instantiateModeler()`` function. An example is shown below.
                 ]
             });
         }
+
     }
 
 .. _ModelerHostListener:

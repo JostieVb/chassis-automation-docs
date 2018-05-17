@@ -1,3 +1,6 @@
+Authentication
+==============
+
 .. _AuthenticationIntroduction:
 
 Introduction

@@ -1,3 +1,6 @@
+Installation
+============
+
 .. _BackendInstallationIntroduction:
 
 Introduction
