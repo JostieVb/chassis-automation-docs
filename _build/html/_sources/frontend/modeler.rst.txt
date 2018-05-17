@@ -78,7 +78,7 @@ Currently, this array holds the following values.
 
 .. danger::
 
-    A new editable type should be added to this array as a **lowercase string without any spaces or other seperators between words**
+    A new editable type should be added to this array as a **lowercase string without any spaces or other seperators between words**.
 
 When an editableType is clicked, the ``initProperties(id: string, type: string)`` initializes the properties for the selected item.
 The properties will be displayed if they already exist for the clicked item. If they don't exist, they will be created by the ``generatePropertiesByType(id: string, type: string, sequence: any)`` function in the properties service.

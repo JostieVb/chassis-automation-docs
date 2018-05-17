@@ -38,7 +38,7 @@ This chapter will explain the usage of Laravel Passport within the prototype.
     authentication
 
 * :ref:`AuthenticationIntroduction`
-* :ref:`RoutesMiddleware`
+* :ref:`AuthenticationLaravelPassport`
 
 .. rubric:: Routes
 
@@ -63,6 +63,7 @@ This chapter will explain the database structure and the usage of prefixed data 
 
 * :ref:`DataTablesIntroduction`
 * :ref:`DataTablesStructure`
+* :ref:`DataTablesMigrationAndSeeding`
 
 .. rubric:: BPMN controller
 

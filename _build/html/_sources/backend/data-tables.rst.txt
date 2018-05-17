@@ -57,3 +57,10 @@ and their names **must** start with the ``ca_`` prefix. By default, a dynamic ta
 | status                        | Indicates the status of an item |
 +-------------------------------+---------------------------------+
 
+.. _DataTablesMigrationAndSeeding:
+
+Migration and seeding
+---------------------
+
+Migrate and seed Chassis Automation's data tables by running the following command:
+``php artisan migrate:refresh --seed``.
