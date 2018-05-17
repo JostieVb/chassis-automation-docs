@@ -1,3 +1,5 @@
+.. _Modeler:
+
 Modeler
 =======
 
@@ -68,11 +70,15 @@ Properties panel
 To enable user interaction with BPMN items in order to edit their properties, a ``@HostListener`` is created.
 This host listener listens to click events that occur on editable BPMN items and calls a function that will display the selected item's properties in the properties panel.
 If you want to extend the range of items that are editable, you can add the type of the item that should be editable to the ``editableTypes`` array, which is a property of the modeler component.
-A new editable type should be added to this array as a **lowercase string without any spaces or other seperators between words**. Currently, this array holds the following values.
+Currently, this array holds the following values.
 
 .. code-block:: javascript
 
     protected editableTypes = ['task', 'exclusivegateway', 'startevent', 'endevent'];
+
+.. danger::
+
+    A new editable type should be added to this array as a **lowercase string without any spaces or other seperators between words**
 
 When an editableType is clicked, the ``initProperties(id: string, type: string)`` initializes the properties for the selected item.
 The properties will be displayed if they already exist for the clicked item. If they don't exist, they will be created by the ``generatePropertiesByType(id: string, type: string, sequence: any)`` function in the properties service.

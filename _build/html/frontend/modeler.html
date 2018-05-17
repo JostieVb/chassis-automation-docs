@@ -169,7 +169,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="modeler">
-<h1>Modeler<a class="headerlink" href="#modeler" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1>Modeler<a class="headerlink" href="#modeler" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <span id="modelerintroduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The modeler uses a toolkit called <a class="reference external" href="https://github.com/bpmn-io/bpmn-js">BPMN-js</a>. The modeler is used when creating or editing a process on the ‘Processes’ page.
@@ -238,9 +238,13 @@ in the <code class="docutils literal notranslate"><span class="pre">instantiateM
 <p>To enable user interaction with BPMN items in order to edit their properties, a <code class="docutils literal notranslate"><span class="pre">&#64;HostListener</span></code> is created.
 This host listener listens to click events that occur on editable BPMN items and calls a function that will display the selected item’s properties in the properties panel.
 If you want to extend the range of items that are editable, you can add the type of the item that should be editable to the <code class="docutils literal notranslate"><span class="pre">editableTypes</span></code> array, which is a property of the modeler component.
-A new editable type should be added to this array as a <strong>lowercase string without any spaces or other seperators between words</strong>. Currently, this array holds the following values.</p>
+Currently, this array holds the following values.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">protected</span> <span class="nx">editableTypes</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;task&#39;</span><span class="p">,</span> <span class="s1">&#39;exclusivegateway&#39;</span><span class="p">,</span> <span class="s1">&#39;startevent&#39;</span><span class="p">,</span> <span class="s1">&#39;endevent&#39;</span><span class="p">];</span>
 </pre></div>
+</div>
+<div class="admonition danger">
+<p class="first admonition-title">Danger</p>
+<p class="last">A new editable type should be added to this array as a <strong>lowercase string without any spaces or other seperators between words</strong></p>
 </div>
 <p>When an editableType is clicked, the <code class="docutils literal notranslate"><span class="pre">initProperties(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string)</span></code> initializes the properties for the selected item.
 The properties will be displayed if they already exist for the clicked item. If they don’t exist, they will be created by the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string,</span> <span class="pre">sequence:</span> <span class="pre">any)</span></code> function in the properties service.</p>

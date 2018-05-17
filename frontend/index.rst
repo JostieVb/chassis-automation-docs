@@ -42,6 +42,8 @@ This chapter gives information about the form builder that can be found on the '
     form-builder
 
 * :ref:`FormBuilderIntroduction`
+* :ref:`FormBuilderFeatures`
+* :ref:`FormBuilderExtending`
 
 .. rubric:: Modeler
 
@@ -60,7 +62,7 @@ This chapter will inform you about Chassis Automation's modeler that is build wi
 
 .. rubric:: Directives
 
-Angular directives extend the html by adding custom attributes. This chapter
+Angular directives extend the html by adding custom attributes to html elements. This chapter
 will explain the usage of directives within Chassis Automation.
 
 .. toctree::
