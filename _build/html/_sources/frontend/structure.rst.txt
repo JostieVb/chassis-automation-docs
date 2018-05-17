@@ -3,8 +3,8 @@ Folder structure
 
 .. _FrontendFolderStructureIntroduction:
 
-Front-end folder structure introduction
----------------------------------------
+Introduction
+------------
 
 This chapter focuses on clarifying the front-end folder structure.
 Because Chassis Automation doesn't depend on Chassis packages yet, the ``@kaiser-software`` folder will not

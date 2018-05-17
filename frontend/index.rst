@@ -8,7 +8,6 @@ and `Angular CLI
 <https://github.com/angular/angular-cli/>`_ if you don't have it installed yet.
 
 .. rubric:: Installation
-            ------------
 
 This chapter will explain the installation process of Chassis Automation's front-end.
 
@@ -22,7 +21,6 @@ This chapter will explain the installation process of Chassis Automation's front
 * :ref:`FrontendInstallationDevelopmentServer`
 
 .. rubric:: Folder structure
-            ----------------
 
 This chapter will clarify Chassis Automation's front-end folder structure.
 
@@ -35,7 +33,6 @@ This chapter will clarify Chassis Automation's front-end folder structure.
 * :ref:`FrontendFolderStructure`
 
 .. rubric:: Form builder
-            ------------
 
 This chapter gives information about the form builder that can be found on the 'Forms' page.
 
@@ -47,7 +44,6 @@ This chapter gives information about the form builder that can be found on the '
 * :ref:`FormBuilderIntroduction`
 
 .. rubric:: Modeler
-            -------
 
 This chapter will inform you about Chassis Automation's modeler that is build with `BPMN-js
 <https://github.com/bpmn-io/bpmn-js>`_.
@@ -63,7 +59,6 @@ This chapter will inform you about Chassis Automation's modeler that is build wi
 * :ref:`ModelerHostListener`
 
 .. rubric:: Directives
-            ----------
 
 Angular directives extend the html by adding custom attributes. This chapter
 will explain the usage of directives within Chassis Automation.
@@ -79,6 +74,5 @@ will explain the usage of directives within Chassis Automation.
 * :ref:`DirectivesUsingBothDirectives`
 
 .. rubric:: Build
-            -----
 
 Run ``ng build`` to build the project. The build artifacts will be stored in the ``dist/`` directory. Use the ``-prod`` flag for a production build.

@@ -5,8 +5,7 @@ Chassis Automation's back-end is a Laravel 5 API. Therefore, the back-end relies
 and update dependencies. Please install `Composer
 <https://getcomposer.org/>`_ if you don't have it installed yet.
 
-Installation
-------------
+.. rubric:: Installation
 
 This chapter will explain the installation process of Chassis Automation's back-end.
 
@@ -19,8 +18,7 @@ This chapter will explain the installation process of Chassis Automation's back-
 * :ref:`BackendInstallationDatabaseSetup`
 * :ref:`BackendInstallationDevelopmentServer`
 
-Folder structure
-----------------
+.. rubric:: Folder structure
 
 .. toctree::
     :hidden:
@@ -30,8 +28,7 @@ Folder structure
 * :ref:`BackendFolderStructureIntroduction`
 * :ref:`BackendFolderStructure`
 
-Authentication
---------------
+.. rubric:: Authentication
 
 This chapter will explain the usage of Laravel Passport within the prototype.
 
@@ -43,8 +40,7 @@ This chapter will explain the usage of Laravel Passport within the prototype.
 * :ref:`AuthenticationIntroduction`
 * :ref:`RoutesMiddleware`
 
-Routes
-------
+.. rubric:: Routes
 
 Routes are the API end-points for Chassis Automation. This chapter provides more information about the usage and other stuff.
 
@@ -56,8 +52,7 @@ Routes are the API end-points for Chassis Automation. This chapter provides more
 * :ref:`RoutesIntroduction`
 * :ref:`RoutesMiddleware`
 
-Data tables
------------
+.. rubric:: Data tables
 
 This chapter will explain the database structure and the usage of prefixed data tables and columns for data storage.
 
@@ -69,8 +64,7 @@ This chapter will explain the database structure and the usage of prefixed data 
 * :ref:`DataTablesIntroduction`
 * :ref:`DataTablesStructure`
 
-BPMN controller
----------------
+.. rubric:: BPMN controller
 
 The BPMN controller handles calls from the front-end that should be linked to a process. This chapter will explain
 the usage of the BPMN controller.
