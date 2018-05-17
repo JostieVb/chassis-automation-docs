@@ -57,6 +57,14 @@ and their names **must** start with the ``ca_`` prefix. By default, a dynamic ta
 | status                        | Indicates the status of an item |
 +-------------------------------+---------------------------------+
 
+Feel free to add other columns to prefixed tables. Make sure that editable columns are prefixed with ``ca_``.
+Tables that are prefixed will be shown on the 'Data tables' page in the prototype and can be linked to a form with the form builder.
+Thereafter, prefixed columns can be linked to form input field with the form builder.
+
+.. danger::
+
+    In editable tables, both the table name and all columns that can be linked to a form input field must have the ``ca_`` prefix.
+
 .. _DataTablesMigrationAndSeeding:
 
 Migration and seeding

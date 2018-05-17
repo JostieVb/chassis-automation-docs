@@ -166,9 +166,13 @@
 <h1>Deploy<a class="headerlink" href="#deploy" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <span id="deployintroduction"></span><h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>This chapter informs you about how to deploy Chassis Automation’s front-end to a live server.</p>
 </div>
 <div class="section" id="deployment">
 <span id="deploydeployment"></span><h2>Deployment<a class="headerlink" href="#deployment" title="Permalink to this headline">¶</a></h2>
+<p>Before building, make sure that the right location of the Chassis Automation API on your live server is set correctly in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/global.ts</span></code>.
+After that, run <code class="docutils literal notranslate"><span class="pre">ng</span> <span class="pre">build</span></code> to build the project. The build artifacts will be stored in the <code class="docutils literal notranslate"><span class="pre">dist/</span></code> directory. Use the <code class="docutils literal notranslate"><span class="pre">-prod</span></code> flag for a production build.</p>
+<p>When done building, copy all content from the <code class="docutils literal notranslate"><span class="pre">dist/</span></code> directory to your live server.</p>
 </div>
 </div>
 
