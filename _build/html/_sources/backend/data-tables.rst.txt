@@ -78,7 +78,7 @@ After executing this command, three tests accounts are created. The table below 
 +----------------------------------+------------+---------------------------------------------------------------+
 | Username                         | Password   | Permissions                                                   |
 +==================================+============+===============================================================+
-| admin@chassis-automation.com     | admin      | dashboard, entries, automation, processes ,forms, data-tables |
+| admin@chassis-automation.com     | admin      | dashboard, entries, automation, processes, forms, data-tables |
 +----------------------------------+------------+---------------------------------------------------------------+
 | logistics@chassis-automation.com | admin      | dashboard, entries                                            |
 +----------------------------------+------------+---------------------------------------------------------------+
