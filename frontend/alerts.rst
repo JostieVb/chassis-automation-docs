@@ -20,17 +20,19 @@ You can find these files in ``chassis-automation-client/src/app/components/alert
 To show a new alert to the user, you have to emit a new instance of an ``Alert`` to the ``alert`` property of the ``AlertService``
 with the desired content. The table below shows the ``Alert`` model's constructor parameters.
 
-+---------------------+-----------------------------------------------------------------------------------------------------------------------+------------+
-| Parameter name      | Brief description                                                                                                     | Type       |
-+=====================+=======================================================================================================================+============+
-| message             | The message that should be displayed in the alert                                                                     | ``string`` |
-+---------------------+-----------------------------------------------------------------------------------------------------------------------+------------+
-| type                | The type of the alert (success | warning | danger | info)                                                             | ``string`` |
-+---------------------+-----------------------------------------------------------------------------------------------------------------------+------------+
-| prefix (optional)   | An optional prefix that will be displayed before the message                                                          | ``string`` |
-+---------------------+-----------------------------------------------------------------------------------------------------------------------+------------+
-| interval (optional) | An optional interval that holds the amount of time an alert should be shown. The default value is 5 seconds (5000 ms) | ``number`` |
-+---------------------+-----------------------------------------------------------------------------------------------------------------------+------------+
++----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+| Parameter name             | Brief description                                                                                                     | Type        |
++============================+=======================================================================================================================+=============+
+| message                    | The message that should be displayed in the alert                                                                     | ``string``  |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+| type                       | The type of the alert (success | warning | danger | info)                                                             | ``string``  |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+| prefix (optional)          | An optional prefix that will be displayed before the message                                                          | ``string``  |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+| clearAlertBox (optional)   | An optional boolean that indicates whether the alert box should be cleared before showing the alert (true | false)    | ``boolean`` |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+| interval (optional)        | An optional interval that holds the amount of time an alert should be shown. The default value is 5 seconds (5000 ms) | ``number``  |
++----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
 
 The code example below shows a case where a form is submitted. After submission, a alert of the type ``success`` is send to the user
 with a prefix.
