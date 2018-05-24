@@ -58,7 +58,8 @@ with a prefix.
                 new Alert(
                     'The form was successfully submitted.',
                     'success',
-                    'Yay!'
+                    'Yay!',
+                    3000
                 )
             );
 
@@ -66,7 +67,7 @@ with a prefix.
 
     }
 
-The image below shows how the alert will be rendered to the end-user. Because an optional interval was not provided, this
-alert will be shown for 5 seconds.
+The image below shows how the alert will be rendered to the end-user. Because an optional interval was provided, this
+alert will be shown for 3 seconds instead of the default 5 seconds.
 
 .. image:: images/alert-example.jpg
