@@ -75,6 +75,19 @@ will explain the usage of directives within Chassis Automation.
 * :ref:`DirectivesCallerDirective`
 * :ref:`DirectivesUsingBothDirectives`
 
+.. rubric:: Alerts
+
+The Chassis Automation prototype enables the developer to send alerts to the end-user when, for example, an action
+is completed. This chapter will inform you about the usage of alerts.
+
+.. toctree::
+    :hidden:
+
+    alerts
+
+* :ref:`AlertsIntroduction`
+* :ref:`AlertsImplementingAnAlert`
+
 .. rubric:: Deploy
 
 This chapter will explain how to deploy Chassis Automation's front-end.

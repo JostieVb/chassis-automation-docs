@@ -75,15 +75,15 @@ Migrate and seed Chassis Automation's data tables by running the following comma
 
 After executing this command, three tests accounts are created. The table below shows their default credentials and permissions.
 
-+----------------------------------+------------+---------------------------------------------------------------+
-| Username                         | Password   | Permissions                                                   |
-+==================================+============+===============================================================+
-| admin@chassis-automation.com     | admin      | dashboard, entries, automation, processes, forms, data-tables |
-+----------------------------------+------------+---------------------------------------------------------------+
-| logistics@chassis-automation.com | admin      | dashboard, entries                                            |
-+----------------------------------+------------+---------------------------------------------------------------+
-| supplier@chassis-automation.com  | admin      | dashboard, entries, products                                  |
-+----------------------------------+------------+---------------------------------------------------------------+
++----------------------------------+------------+---------------------------------------------------+
+| Username                         | Password   | Permissions                                       |
++==================================+============+===================================================+
+| admin@chassis-automation.com     | admin      | dashboard, entries, processes, forms, data-tables |
++----------------------------------+------------+---------------------------------------------------+
+| logistics@chassis-automation.com | admin      | dashboard, entries                                |
++----------------------------------+------------+---------------------------------------------------+
+| supplier@chassis-automation.com  | admin      | dashboard, entries, products                      |
++----------------------------------+------------+---------------------------------------------------+
 
 .. _DataTablesEditUserPermissions:
 
