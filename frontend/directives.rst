@@ -39,6 +39,12 @@ The example below shows how the ``form`` directive should be used.
     a form title and a subtitle, because this isn't supported by the form builder yet. You should add a submit button
     manually just below the ``<form>`` element where the directive is set.
 
+If a form can't be displayed, because the form hasn't been built yet with the form builder, an error message will be shown
+to inform you about the missing form. The image below shows an example where a form called ``form-new-product`` can't be found
+by the directive.
+
+.. image:: images/form-directive-error-example.jpg
+
 To handle the submit event, the ``caller`` directive comes in. More information about the ``caller`` directive will be
 given in the next sub-chapter.
 
