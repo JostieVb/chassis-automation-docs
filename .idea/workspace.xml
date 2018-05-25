@@ -14,8 +14,8 @@
       <file leaf-file-name="alerts.rst" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/alerts.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="180" lean-forward="true" selection-start-line="24" selection-start-column="180" selection-end-line="24" selection-end-column="180" />
+            <state relative-caret-position="578">
+              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -192,12 +192,12 @@
       <workItem from="1527171633164" duration="3756000" />
       <workItem from="1527177528615" duration="348000" />
       <workItem from="1527233131069" duration="291000" />
-      <workItem from="1527261331614" duration="1050000" />
+      <workItem from="1527261331614" duration="1700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70746000" />
+    <option name="totallyTimeSpent" value="71396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -545,8 +545,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/alerts.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="180" lean-forward="true" selection-start-line="24" selection-start-column="180" selection-end-line="24" selection-end-column="180" />
+        <state relative-caret-position="578">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
           <folding />
         </state>
       </provider>

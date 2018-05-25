@@ -40,6 +40,10 @@ An alert can also be displayed for an infinite amount of time instead of a fixed
 If both the ``interval`` is set to ``0`` and ``dismissable`` is ``false``, the alert will automatically get the default interval, because it is not user friendly
 to show an alert that is shown forever and can't be dismissed by the user.
 
+An alert has by default a minimal interval of 1000 milliseconds. If you enter an interval that is smaller than this, the interval wil automatically be corrected
+to the default minimum of 1000 milliseconds. You can change the default minimal interval by changing the ``minInterval`` property of the alert component.
+The alert component can be found in ``chassis-automation-client/src/app/components/alert/alert.component.ts``.
+
 The code example below shows a case where a form is submitted. After submission, an alert of the type ``success`` is send to the user
 with a prefix.
 
