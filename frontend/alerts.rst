@@ -34,7 +34,7 @@ with the desired content. The table below shows the ``Alert`` model's constructo
 | interval (optional)        | An optional interval that holds the amount of time an alert should be shown. The default value is 5 seconds (5000 ms) | ``number``  |
 +----------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
 
-The code example below shows a case where a form is submitted. After submission, a alert of the type ``success`` is send to the user
+The code example below shows a case where a form is submitted. After submission, an alert of the type ``success`` is send to the user
 with a prefix.
 
 .. code-block:: javascript
