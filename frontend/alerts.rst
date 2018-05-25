@@ -27,7 +27,7 @@ with the desired content. The table below shows the ``Alert`` model's constructo
 +----------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+
 | type                       | The type of the alert (success | warning | danger | info)                                                             |               | ``string``  |
 +----------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+
-| prefix (optional)          | An optional prefix that will be displayed before the message                                                          | ``''``        | ``string``" |
+| prefix (optional)          | An optional prefix that will be displayed before the message                                                          | ``''``        | ``string``  |
 +----------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+
 | clearAlertBox (optional)   | An optional boolean that indicates whether the alert box should be cleared before showing the alert (true | false)    | ``false``     | ``boolean`` |
 +----------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+
