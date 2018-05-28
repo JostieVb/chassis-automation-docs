@@ -18,7 +18,7 @@ Implementing an alert
 To implement an alert, you need to ``import`` the ``AlertService`` (alert.service.ts) and the ``Alert`` (alert.ts) model.
 You can find these files in ``chassis-automation-client/src/app/components/alert``.
 To show a new alert to the user, you have to emit a new instance of an ``Alert`` to the ``alert`` property of the ``AlertService``
-with the desired content. The table below shows the ``Alert`` model's constructor parameters.
+with the desired content. The table below shows the parameters of the ``Alert`` model that can be used to construct a new alert.
 
 +----------------------------+-----------------------------------------------------------------------------------------------------------------------+---------------+-------------+
 | Parameter name             | Brief description                                                                                                     | Default value |Type         |

@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/alerts.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
-              <caret line="29" column="127" lean-forward="false" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+              <caret line="20" column="128" lean-forward="true" selection-start-line="20" selection-start-column="128" selection-end-line="20" selection-end-column="128" />
               <folding />
             </state>
           </provider>
@@ -24,7 +24,7 @@
       <file leaf-file-name="directives.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/directives.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
+            <state relative-caret-position="884">
               <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding />
             </state>
@@ -204,12 +204,13 @@
       <workItem from="1527233131069" duration="291000" />
       <workItem from="1527261331614" duration="2666000" />
       <workItem from="1527491171907" duration="410000" />
-      <workItem from="1527503680186" duration="39000" />
+      <workItem from="1527503680186" duration="663000" />
+      <workItem from="1527515153240" duration="39000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72811000" />
+    <option name="totallyTimeSpent" value="73474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -550,7 +551,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/directives.rst">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="884">
           <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding />
         </state>
@@ -559,7 +560,7 @@
     <entry file="file://$PROJECT_DIR$/frontend/alerts.rst">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
-          <caret line="29" column="127" lean-forward="false" selection-start-line="29" selection-start-column="127" selection-end-line="29" selection-end-column="127" />
+          <caret line="20" column="128" lean-forward="true" selection-start-line="20" selection-start-column="128" selection-end-line="20" selection-end-column="128" />
           <folding />
         </state>
       </provider>
