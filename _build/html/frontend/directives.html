@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Back-end" href="../backend/index.html" />
+    <link rel="next" title="Alerts" href="alerts.html" />
     <link rel="prev" title="Modeler" href="modeler.html" /> 
 
   
@@ -82,21 +82,19 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Getting started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Front-end</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="index.html#installation">Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#folder-structure">Folder structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#form-builder">Form builder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#modeler">Modeler</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html#directives">Directives</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Directives</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#form-directive">Form directive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#caller-directive">Caller directive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#using-both-directives">Using both directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Folder structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form-builder.html">Form builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modeler.html">Modeler</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Directives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#form-directive">Form directive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#caller-directive">Caller directive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-both-directives">Using both directives</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#build">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alerts.html">Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy.html">Deploy</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../backend/index.html">Back-end</a></li>
@@ -199,6 +197,10 @@ The example below shows how the <code class="docutils literal notranslate"><span
 a form title and a subtitle, because this isn’t supported by the form builder yet. You should add a submit button
 manually just below the <code class="docutils literal notranslate"><span class="pre">&lt;form&gt;</span></code> element where the directive is set.</p>
 </div>
+<p>If a form can’t be displayed, because the form hasn’t been built yet with the form builder, an error message will be shown
+to inform you about the missing form. The image below shows an example where a form called <code class="docutils literal notranslate"><span class="pre">form-new-product</span></code> can’t be found
+by the directive.</p>
+<img alt="../_images/form-directive-error-example.jpg" src="../_images/form-directive-error-example.jpg" />
 <p>To handle the submit event, the <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive comes in. More information about the <code class="docutils literal notranslate"><span class="pre">caller</span></code> directive will be
 given in the next sub-chapter.</p>
 </div>
@@ -238,7 +240,7 @@ A full example is shown below.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../backend/index.html" class="btn btn-neutral float-right" title="Back-end" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="alerts.html" class="btn btn-neutral float-right" title="Alerts" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="modeler.html" class="btn btn-neutral" title="Modeler" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

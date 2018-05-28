@@ -41,7 +41,7 @@ Modeler initialization
 ----------------------
 
 The modeler component can be found in ``chassis-automation-client/src/app/processes/pages/modeler/modeler.component.ts``.
-The modeler is initialized in the ``instantiateModeler()`` function and is stored in the ``modeler`` property of the modeler component.
+The modeler is initialized in the ``instantiateModeler()`` method and is stored in the ``modeler`` property of the modeler component.
 If you need to add additional modules to the modeler, you can import them to the modeler component add them to the ``additionalModules`` array
 in the ``instantiateModeler()`` function. An example is shown below.
 
@@ -80,8 +80,9 @@ Currently, this array holds the following values.
 
     A new editable type should be added to this array as a **lowercase string without any spaces or other seperators between words**.
 
-When an editableType is clicked, the ``initProperties(id: string, type: string)`` initializes the properties for the selected item.
-The properties will be displayed if they already exist for the clicked item. If they don't exist, they will be created by the ``generatePropertiesByType(id: string, type: string, sequence: any)`` function in the properties service.
+When an editableType is clicked, the ``initProperties(id: string, type: string)`` method initializes the properties for the selected item.
+The properties will be displayed if they already exist for the clicked item. If they don't exist, they will be created by the ``generatePropertiesByType(id: string, type: string, sequence: any)`` method in the
+that can be found in the properties service.
 
 The properties service
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -117,8 +118,8 @@ they have to be set by the end-user. An example is shown below.
 To render the properties, you need to add a new ``ng-template`` element to the html template for the modeler.
 You can find the html template in ``chassis-automation-client/src/app/processes/pages/modeler/modeler.component.html``.
 
-Extending the helpers
-~~~~~~~~~~~~~~~~~~~~~
+Extending the properties helpers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``helpers()`` method returns an object that holds more information for the end-user about certain properties.
 During rendering, this information will be shown in pop-up balloons in the properties panel.

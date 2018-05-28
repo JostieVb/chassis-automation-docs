@@ -92,12 +92,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#properties-panel">Properties panel</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#the-properties-service">The properties service</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#extending-the-properties-generator">Extending the properties generator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#extending-the-helpers">Extending the helpers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extending-the-properties-helpers">Extending the properties helpers</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alerts.html">Alerts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy.html">Deploy</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../backend/index.html">Back-end</a></li>
@@ -213,7 +215,7 @@ This chapter will explain the features of the modeler.</p>
 <div class="section" id="modeler-initialization">
 <span id="modelerbasics"></span><h2>Modeler initialization<a class="headerlink" href="#modeler-initialization" title="Permalink to this headline">¶</a></h2>
 <p>The modeler component can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/pages/modeler/modeler.component.ts</span></code>.
-The modeler is initialized in the <code class="docutils literal notranslate"><span class="pre">instantiateModeler()</span></code> function and is stored in the <code class="docutils literal notranslate"><span class="pre">modeler</span></code> property of the modeler component.
+The modeler is initialized in the <code class="docutils literal notranslate"><span class="pre">instantiateModeler()</span></code> method and is stored in the <code class="docutils literal notranslate"><span class="pre">modeler</span></code> property of the modeler component.
 If you need to add additional modules to the modeler, you can import them to the modeler component add them to the <code class="docutils literal notranslate"><span class="pre">additionalModules</span></code> array
 in the <code class="docutils literal notranslate"><span class="pre">instantiateModeler()</span></code> function. An example is shown below.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">AdditionalModuleName</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;additional/module/path&#39;</span><span class="p">;</span>
@@ -246,8 +248,9 @@ Currently, this array holds the following values.</p>
 <p class="first admonition-title">Danger</p>
 <p class="last">A new editable type should be added to this array as a <strong>lowercase string without any spaces or other seperators between words</strong>.</p>
 </div>
-<p>When an editableType is clicked, the <code class="docutils literal notranslate"><span class="pre">initProperties(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string)</span></code> initializes the properties for the selected item.
-The properties will be displayed if they already exist for the clicked item. If they don’t exist, they will be created by the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string,</span> <span class="pre">sequence:</span> <span class="pre">any)</span></code> function in the properties service.</p>
+<p>When an editableType is clicked, the <code class="docutils literal notranslate"><span class="pre">initProperties(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string)</span></code> method initializes the properties for the selected item.
+The properties will be displayed if they already exist for the clicked item. If they don’t exist, they will be created by the <code class="docutils literal notranslate"><span class="pre">generatePropertiesByType(id:</span> <span class="pre">string,</span> <span class="pre">type:</span> <span class="pre">string,</span> <span class="pre">sequence:</span> <span class="pre">any)</span></code> method in the
+that can be found in the properties service.</p>
 <div class="section" id="the-properties-service">
 <h3>The properties service<a class="headerlink" href="#the-properties-service" title="Permalink to this headline">¶</a></h3>
 <p>The properties service can be found in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/services/properties.service.ts</span></code>.
@@ -278,8 +281,8 @@ they have to be set by the end-user. An example is shown below.</p>
 <p>To render the properties, you need to add a new <code class="docutils literal notranslate"><span class="pre">ng-template</span></code> element to the html template for the modeler.
 You can find the html template in <code class="docutils literal notranslate"><span class="pre">chassis-automation-client/src/app/processes/pages/modeler/modeler.component.html</span></code>.</p>
 </div>
-<div class="section" id="extending-the-helpers">
-<h3>Extending the helpers<a class="headerlink" href="#extending-the-helpers" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="extending-the-properties-helpers">
+<h3>Extending the properties helpers<a class="headerlink" href="#extending-the-properties-helpers" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> method returns an object that holds more information for the end-user about certain properties.
 During rendering, this information will be shown in pop-up balloons in the properties panel.
 If you want to extend the helpers, you can simply add a new property to the object that the <code class="docutils literal notranslate"><span class="pre">helpers()</span></code> method returns.

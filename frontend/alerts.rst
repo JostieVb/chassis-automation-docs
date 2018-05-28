@@ -20,21 +20,23 @@ You can find these files in ``chassis-automation-client/src/app/components/alert
 To show a new alert to the user, you have to emit a new instance of an ``Alert`` to the ``alert`` property of the ``AlertService``
 with the desired content. The table below shows the parameters of the ``Alert`` model that can be used to construct a new alert.
 
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
-| Parameter name             | Brief description                                                                                                     | Default value         | Type        |
-+============================+=======================================================================================================================+=======================+=============+
-| message                    | The message that should be displayed in the alert                                                                     |                       | ``string``  |
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
-| type                       | The type of the alert (success | warning | danger | info)                                                             |                       | ``string``  |
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
-| prefix (optional)          | An optional prefix that will be displayed before the message. A prefix can contain HTML elements                      | ``''`` (empty string) | ``string``  |
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
-| clearAlertBox (optional)   | An optional boolean that indicates whether the alert box should be cleared before showing the alert (true | false)    | ``false``             | ``boolean`` |
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
-| dismissable (optional)     | An optional boolean that indicates whether the alert can be dismissed (true | false)                                  | ``true``              | ``boolean`` |
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
-| interval (optional)        | An optional interval that holds the amount of time an alert should be shown. The default value is 5 seconds (5000 ms) | ``5000``              | ``number``  |
-+----------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| Parameter name                   | Brief description                                                                                                     | Default value         | Type        |
++==================================+=======================================================================================================================+=======================+=============+
+| message                          | The message that should be displayed in the alert                                                                     |                       | ``string``  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| type                             | The type of the alert (success | warning | danger | info)                                                             |                       | ``string``  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| prefix (optional)                | An optional prefix that will be displayed before the message. A prefix can contain HTML elements                      | ``''`` (empty string) | ``string``  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| clearAlertBox (optional)         | An optional boolean that indicates whether the alert box should be cleared before showing the alert (true | false)    | ``false``             | ``boolean`` |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| dismissable (optional)           | An optional boolean that indicates whether the alert can be dismissed (true | false)                                  | ``true``              | ``boolean`` |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| showDurationIndicator (optional) | An optional boolean that indicates whether a duration indicator should be displayed                                   | ``false``             | ``boolean`` |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
+| interval (optional)              | An optional interval that holds the amount of time an alert should be shown. The default value is 5 seconds (5000 ms) | ``5000``              | ``number``  |
++----------------------------------+-----------------------------------------------------------------------------------------------------------------------+-----------------------+-------------+
 
 An alert can also be displayed for an infinite amount of time instead of a fixed time span. To achieve this, you have to set the ``interval`` parameter to ``0``.
 If both the ``interval`` is set to ``0`` and ``dismissable`` is ``false``, the alert will automatically get the default interval, because it is not user friendly
@@ -84,4 +86,4 @@ with a prefix.
 The image below shows how the alert will be rendered to the end-user. Because an optional interval was provided, this
 alert will be shown for 3 seconds instead of the default 5 seconds.
 
-.. image:: images/alert-example.jpg
+.. image:: images/alert-example.gif
